@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900|Playfair+Display:400i");
+.marginset, .results .countrylist h2, .results .countrylist ul, #flag {
+  margin-left: auto;
+  margin-right: auto; }
+
+body {
+  max-width: 1600px;
+  margin: 0;
+  background-color: #977b6f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+[class*="col-"] {
+  Float: left;
+  min-height: 1px;
+  text-align: center;
+  margin: 0;
+  position: relative; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.jumbotron {
+  max-width: 100%;
+  height: 60vh;
+  background-image: url(https://images.pexels.com/photos/169685/pexels-photo-169685.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .jumbotron h1 {
+    float: right;
+    width: 50%;
+    text-align: left;
+    height: auto;
+    color: #fff;
+    margin-top: 10%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.galery {
+  margin-bottom: 10%;
+  height: 40vh;
+  max-width: 100%; }
+  .galery img {
+    width: 100%;
+    height: 40vh;
+    border: 2px solid #cfb489; }
+
+.countrysearch {
+  height: 30vh;
+  max-width: 100%;
+  margin-top: 2%; }
+  .countrysearch #country-name {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #9c9dac; }
+  .countrysearch #search {
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    border: 2px solid #856b5c;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; }
+    .countrysearch #search:hover {
+      background-color: #3f2c26;
+      color: white; }
+  .countrysearch h1 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3%; }
+
+.results {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 10%; }
+  .results .countrylist {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .results .countrylist h2 {
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      max-width: 80%;
+      text-align: center;
+      text-decoration: underline; }
+    .results .countrylist .kura {
+      max-width: 100%; }
+    .results .countrylist ul {
+      max-width: 90%;
+      text-align: left;
+      padding-left: 0;
+      border: 2px solid #856b5c; }
+    .results .countrylist li {
+      list-style-type: none;
+      padding: 3%; }
+    .results .countrylist span {
+      padding: 3%;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      color: #392723; }
+    .results .countrylist #landname {
+      max-width: 100%;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+      text-align: center;
+      color: #392723; }
+
+#flag {
+  margin-top: 5%;
+  width: 300px;
+  height: auto; }
+
+.footer {
+  background-color: #3f2c26;
+  color: #cfb489; }
+
+@media(min-width: 768px) and (max-width: 1199px) {
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; } }
+@media(max-width: 768px) {
+  .col-s-1 {
+    width: 8.33%; }
+
+  .col-s-2 {
+    width: 16.66%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.33%; }
+
+  .col-s-5 {
+    width: 41.66%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.33%; }
+
+  .col-s-8 {
+    width: 66.66%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.33%; }
+
+  .col-s-11 {
+    width: 91.66%; }
+
+  .col-s-12 {
+    width: 100%; } }
