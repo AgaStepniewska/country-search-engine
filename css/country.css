@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900|Playfair+Display:400i");
-.marginset, .results .countrylist h2, .results .countrylist ul, #flag {
+.marginset, .hero h1, .results, .results .countrylist, .results .countrylist h2, .results .countrylist ul, #flag {
   margin-left: auto;
   margin-right: auto; }
 
@@ -59,24 +59,41 @@ body {
   display: table;
   clear: both; }
 
-.jumbotron {
+.hero {
   max-width: 100%;
-  height: 60vh;
+  height: 100vh;
   background-image: url(https://images.pexels.com/photos/169685/pexels-photo-169685.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  .jumbotron h1 {
-    float: right;
-    width: 50%;
-    text-align: left;
-    height: auto;
+  .hero h1 {
+    width: 70%;
+    text-align: center;
+    line-height: 15vh;
     color: #fff;
-    margin-top: 10%;
+    margin-top: 15%;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: 50px;
-    background-color: rgba(0, 0, 0, 0.5); }
+    font-size: 5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 7px 20px 2px rgba(0, 0, 0, 0.7); }
+  .hero .click {
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #856b5c;
+    box-shadow: 2px 7px 20px 2px rgba(0, 0, 0, 0.7);
+    filter: brightness(80%); }
+    .hero .click:hover {
+      background-color: #3f2c26; }
+    .hero .click a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #fff; }
 
 .galery {
   margin-bottom: 10%;
@@ -90,7 +107,8 @@ body {
 .countrysearch {
   height: 30vh;
   max-width: 100%;
-  margin-top: 2%; }
+  max-height: 100vh;
+  margin-top: 1%; }
   .countrysearch #country-name {
     width: 200px;
     height: 30px;
@@ -99,13 +117,13 @@ body {
     width: 150px;
     height: 30px;
     border-radius: 5%;
-    background-color: white;
-    color: black;
+    background-color: #fff;
     border: 2px solid #856b5c;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s; }
     .countrysearch #search:hover {
+      cursor: pointer;
       background-color: #3f2c26;
       color: white; }
   .countrysearch h1 {
@@ -117,14 +135,10 @@ body {
 
 .results {
   max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   height: auto;
   margin-top: 10%; }
   .results .countrylist {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
+    max-width: 80%; }
     .results .countrylist h2 {
       text-transform: uppercase;
       font-family: "Raleway", sans-serif;
@@ -132,8 +146,6 @@ body {
       max-width: 80%;
       text-align: center;
       text-decoration: underline; }
-    .results .countrylist .kura {
-      max-width: 100%; }
     .results .countrylist ul {
       max-width: 90%;
       text-align: left;
